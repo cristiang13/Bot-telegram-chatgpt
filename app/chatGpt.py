@@ -3,8 +3,6 @@ import openai
 from dotenv import load_dotenv
 load_dotenv()
 
-# url del bots https://api.telegram.org/bot5943958953:AAGJBn4_XQ7SUxnmHtjzdTNdMxUbC9JGsPw/getMe 
-# Load your API key from an environment variable or secret management service os.getenv(
 openai.api_key = os.getenv("OPENAI_API_KEY")
 
 def getResponseChatGpt(input):
@@ -41,5 +39,3 @@ def getResponseChatGpt(input):
   
   return(response['choices'][0]['text'])  
         
-  # except Exception as e:
-  #   return("Lo siento ha ocurrido un error interno. Vuelve a intentarlo",e)
