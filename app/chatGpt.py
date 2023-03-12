@@ -15,7 +15,7 @@ def getResponseChatGpt(input):
     print(input['variables']['frequency_penalty'])
     print(input['variables']['presence_penalty'])
 
-  # try:
+  # evalua las variables del input para el promt del chatgpt:
   if 'variables' in input:
       response = openai.Completion.create(
       model=input['variables']['model'],

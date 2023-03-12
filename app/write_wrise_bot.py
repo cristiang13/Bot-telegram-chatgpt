@@ -17,7 +17,7 @@ variables={}
 @bot.message_handler(commands=["start"])
 def start(message):
 
-    # Envía un mensaje al usuario pidiéndole que inicie sesión con el teclado personalizado como teclado de respuesta
+    # Envía un mensaje al usuario pidiéndole que inicie sesión con el teclado personalizado 
     bot.send_message(message.chat.id,"Por favor inicia sesión")
     # Se crea una teclado de respuesta obligatoria.
     markup = ForceReply()
